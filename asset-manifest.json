@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.c463a96c.css",
+    "main.css": "./static/css/main.8709ed84.css",
     "main.js": "./static/js/main.fc1961ef.js",
     "static/js/453.acca0757.chunk.js": "./static/js/453.acca0757.chunk.js",
     "static/media/rohan_panda_portrait.jpg": "./static/media/rohan_panda_portrait.30ad833b355c209de442.jpg",
     "index.html": "./index.html",
-    "main.c463a96c.css.map": "./static/css/main.c463a96c.css.map",
+    "main.8709ed84.css.map": "./static/css/main.8709ed84.css.map",
     "main.fc1961ef.js.map": "./static/js/main.fc1961ef.js.map",
     "453.acca0757.chunk.js.map": "./static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c463a96c.css",
+    "static/css/main.8709ed84.css",
     "static/js/main.fc1961ef.js"
   ]
 }
