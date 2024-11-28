@@ -8,6 +8,11 @@ section.hero {
   min-height: 100vh;
   width: 100%;
   transition: background-color var(--transition-duration) ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero .hero-container {
@@ -65,7 +70,9 @@ section.hero {
   font-size: 1.1rem;
   text-decoration: none;
   transition: var(--transition);
-  margin-bottom: 2rem;
+  margin: 2rem auto;
+  display: block;
+  width: fit-content;
 }
 
 .resume-button:hover {
@@ -76,6 +83,11 @@ section.hero {
 .social-links {
   display: flex;
   gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 600px;
 }
 
 .social-link {
@@ -86,13 +98,25 @@ section.hero {
   border: 1px solid var(--accent-primary);
   border-radius: 5px;
   color: var(--accent-primary);
+  background: transparent;
   text-decoration: none;
   transition: var(--transition);
 }
 
 .social-link:hover {
-  background: rgba(100, 255, 218, 0.1);
+  background: var(--accent-primary);
+  color: var(--bg-primary);
   transform: translateY(-2px);
+}
+
+[data-theme='light'] .social-link {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+[data-theme='light'] .social-link:hover {
+  background: var(--accent-primary);
+  color: white;
 }
 
 .profile-pic-container {
@@ -129,5 +153,16 @@ section.hero {
   .profile-pic-container {
     width: 250px;
     height: 250px;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-link {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
   }
 }
